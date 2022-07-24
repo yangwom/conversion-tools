@@ -31,7 +31,7 @@ public class ConversionTools
     {
           if(doubleVariable is double) {
 
-         doubleVariable = Convert.ToDouble(strVariable);
+          strVariable = Convert.ToString(doubleVariable);
          
         };
     }
