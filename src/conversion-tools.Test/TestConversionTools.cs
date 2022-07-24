@@ -10,7 +10,16 @@ public class TestFirstRequirement{
     [InlineData("1", 1)]
     public void TestConvertStrToInt(string entry, int expected)
     {
-        throw new NotImplementedException();
+        var instance = new ConversionTools();
+        instance.strVariable = entry;
+    
+
+        instance.ConvertStrToInt();
+
+        instance.intVariable.Should().Be(expected);
+
+
+    
     }
 }
 
