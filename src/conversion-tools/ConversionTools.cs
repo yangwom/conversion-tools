@@ -14,7 +14,7 @@ public class ConversionTools
       
     public void ConvertStrToDouble()
     {
-        
+        doubleVariable = Convert.ToDouble(strVariable);
     }
 
     public void ConvertIntToStr()
