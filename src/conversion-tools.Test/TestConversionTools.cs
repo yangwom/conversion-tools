@@ -11,6 +11,7 @@ public class TestFirstRequirement{
     public void TestConvertStrToInt(string entry, int expected)
     {
         var instance = new ConversionTools();
+        
         instance.strVariable = entry;
     
 
@@ -28,7 +29,13 @@ public class TestSecondRequirement{
     [InlineData("1.0", 1.0)]
     public void TestConvertStrToDouble(string entry, double expected)
     {
-        throw new NotImplementedException();
+       var instace = new ConversionTools;
+
+       instace.strVariable = entry;
+
+       instace.ConvertStrToDouble();
+
+       instace.doubleVariable.Should().Be(expected);
     }
 }
 
