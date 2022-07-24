@@ -29,7 +29,7 @@ public class TestSecondRequirement{
     [InlineData("1.0", 1.0)]
     public void TestConvertStrToDouble(string entry, double expected)
     {
-       var instace = new ConversionTools;
+       var instace = new ConversionTools();
 
        instace.strVariable = entry;
 
@@ -44,7 +44,13 @@ public class TestThirdRequirement{
     [InlineData(1, "1")]
     public void TestConvertIntToStr(int entry, string expected)
     {
-        throw new NotImplementedException();
+        var instace = new ConversionTools();
+        
+        instace.intVariable = entry;
+
+        instace.ConvertIntToStr();
+
+        instace.strVariable.Should().Be(expected);
     }
 }
 
