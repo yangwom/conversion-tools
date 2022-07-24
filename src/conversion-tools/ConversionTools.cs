@@ -19,7 +19,12 @@ public class ConversionTools
 
     public void ConvertIntToStr()
     {
-        throw new NotImplementedException();
+        
+        if(intVariable is int) {
+
+         strVariable = Convert.ToString(intVariable);
+         
+        };
     }
 
     public void ConvertDoubleToStr()
